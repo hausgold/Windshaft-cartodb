@@ -32,7 +32,7 @@ describe('req2params', function() {
         global.environment.user_from_host = null;
 
         var cdbRequest = new CdbRequest();
-        var user = cdbRequest.userByReq(createRequest('development.localhost.lan'));
+        var user = cdbRequest.userByReq(createRequest('development.cartodb.localhost'));
 
         global.environment.user_from_host = userFromHostConfig;
 
